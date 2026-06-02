@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --main: #c85a30;
+    --pale-main: #e3cab9;
+    --secondary: #e8ded2;
+    --pale-secondary: #ded1c1;
+    --additional: #faf4ee;
+
+    --font-color-main: rgb(45, 24, 16);
+}
+
+body {
+    background-color: var(--additional);
+    font-family: "Work Sans", monospace;
+    color: var(--font-color-main);
+}
+
+header {
+    background-color: var(--secondary);
+    padding-block: 1.5rem;
+    max-height: 100px;
+    border-bottom: 0.5px solid var(--pale-main);
+
+    h1 {
+        font-family: "Work Sans", monospace;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header_logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-bg {
+    border-radius: 8px;
+    background-color: var(--main);
+    padding: 10px;
+}
+
+.pages-list {
+    display: flex;
+    gap: 2.5rem;
+    background-color: var(--pale-secondary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+
+    li {
+        padding: 5px 10px;
+    }
+
+    li > a {
+        font-weight: 500;
+    }
+
+    li:hover {
+        background-color: var(--main);
+    }
+}
